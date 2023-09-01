@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please-uat
+
+concurrency: release-please-uat
+
+jobs:
+  release-please-test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        name: release-please-test
+        with:
+          token: ${{ secrets.TOKEN }}
+          release-type: go
+          prerelease: true
+          versioning-strategy: prerelease
+          changelog-path: CHANGELOG/Test.md
+          tag-separator: '/'
+          default-branch: main
