@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0-beta1](https://github.com/kalosisz/rel4/compare/v1.0.0-beta0...v1.0.0-beta1) (2023-09-01)
+
+
+### Features
+
+* new feat ([8317156](https://github.com/kalosisz/rel4/commit/83171568d6075119d8310ce0a8dc070418663f77))
+
 ## 1.0.0-beta0 (2023-09-01)
 
 
